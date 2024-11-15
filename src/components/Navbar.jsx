@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="login flex gap-2 items-center">
         <div className=" ">
           {
-            user && user?.email ? <div><img src={user?.photoURL} alt="" />
+            user && user?.email ? <div className="flex gap-3 items-center"><img className="w-10 h-10 rounded-full" src={user?.photoURL} alt="" />
             <p>{user.displayName}</p>
             </div> : 
             <img src={userIcon} alt="" />
